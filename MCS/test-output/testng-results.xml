@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22373" started-at="2019-01-28T06:39:05Z" finished-at="2019-01-28T06:39:27Z">
+  <suite name="Suite" duration-ms="19767" started-at="2019-02-08T11:54:45Z" finished-at="2019-02-08T11:55:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22373" started-at="2019-01-28T06:39:05Z" finished-at="2019-01-28T06:39:27Z">
+    <test name="Verify Login" duration-ms="19683" started-at="2019-02-08T11:54:45Z" finished-at="2019-02-08T11:55:05Z">
       <class name="TestCases.verifyLogin">
-        <test-method status="PASS" signature="verifyValidLogin()[pri:0, instance:TestCases.verifyLogin@396a51ab]" name="verifyValidLogin" duration-ms="22335" started-at="2019-01-28T06:39:05Z" finished-at="2019-01-28T06:39:27Z">
+        <test-method status="PASS" signature="verifyValidLogin()[pri:0, instance:TestCases.verifyLogin@70e8f8e]" name="verifyValidLogin" duration-ms="19648" started-at="2019-02-08T11:54:45Z" finished-at="2019-02-08T11:55:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyValidLogin -->
       </class> <!-- TestCases.verifyLogin -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Verify Login -->
+    <test name="Create IB" duration-ms="18" started-at="2019-02-08T11:55:05Z" finished-at="2019-02-08T11:55:05Z">
+      <class name="TestCases.createIB">
+        <test-method status="FAIL" signature="IBCreation()[pri:0, instance:TestCases.createIB@15eb5ee5]" name="IBCreation" duration-ms="12" started-at="2019-02-08T11:55:05Z" finished-at="2019-02-08T11:55:05Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at java.util.Objects.requireNonNull(Unknown Source)
+at org.openqa.selenium.support.ui.FluentWait.<init>(FluentWait.java:106)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:85)
+at org.openqa.selenium.support.ui.WebDriverWait.<init>(WebDriverWait.java:45)
+at InternetBooking.internetBooking.<init>(internetBooking.java:22)
+at TestCases.createIB.IBCreation(createIB.java:15)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IBCreation -->
+      </class> <!-- TestCases.createIB -->
+    </test> <!-- Create IB -->
+  </suite> <!-- Suite -->
 </testng-results>
